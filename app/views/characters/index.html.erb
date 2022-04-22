@@ -1,0 +1,25 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Characters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Full name</th>
+      <th scope="col">Short name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @characters.each do |character| %>
+      <tr>
+        <td><%= link_to character.name, character %></td>
+        <td><%= character.shortname %>
+      </tr>
+    <% end %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td><%= link_to "New character", new_character_path %></td>
+    </tr>
+  </tfoot>
+</table>
