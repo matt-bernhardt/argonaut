@@ -1,8 +1,26 @@
+<%= content_for(:title, "Argonaut demonstration application") %>
+
 <h1>Argonaut</h1>
 
 <p>This is a static HTML page.</p>
 
 <h2>Application Changelog</h2>
+
+<h3>0.3.0</h3>
+
+<p>The theme gem now provides an application.html.erb file, which itself loads
+  precompiled assets like the favicon (precompilation was introduced in the
+  0.2.x release).</p>
+
+<p>This static HTML template now leverages the content_for(:title) feature as
+  well.</p>
+
+<p>The theme-provided stylesheet is now loaded via manifest.js, giving this
+  application access to SCSS variables defined by the theme. This is why the
+  h3 tags on this page are now underlines in bright blue.</p>
+
+<p>(The changelog entry for 0.2.2 now no longer includes a real Rails
+  directive to load the stylesheet.)</p>
 
 <h3>0.2.2</h3>
 
@@ -10,7 +28,9 @@
   implementing sites just need to add the stylesheet tag to their head
   template, no need to edit the manifest:</p>
 
-<%= stylesheet_link_tag 'libraries-main', :media => 'all' %>
+<pre>
+&lt;%= stylesheet_link_tag 'libraries-main', :media => 'all' %&gt;
+</pre>
 
 <p>As a result of these changes, this page should now render with a gray
   background and white text - the stylesheet is being loaded, but the markup
