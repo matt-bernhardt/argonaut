@@ -1,7 +1,7 @@
 PATH
   remote: ../blorgh/tesseract
   specs:
-    tesseract (0.2.0)
+    tesseract (0.2.2)
       rails (>= 7.0.3.1)
       sassc-rails (~> 2)
 
@@ -242,7 +242,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
-  tesseract (= 0.2.0)!
+  tesseract (= 0.2.2)!
   turbo-rails
   tzinfo-data
   web-console

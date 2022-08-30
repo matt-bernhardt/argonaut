@@ -4,6 +4,29 @@
 
 <h2>Application Changelog</h2>
 
+<h3>0.2.2</h3>
+
+<p>The theme gem now precompiles the libraries-main stylesheet, meaning that
+  implementing sites just need to add the stylesheet tag to their head
+  template, no need to edit the manifest:</p>
+
+<%= stylesheet_link_tag 'libraries-main', :media => 'all' %>
+
+<p>As a result of these changes, this page should now render with a gray
+  background and white text - the stylesheet is being loaded, but the markup
+  is not yet provided by the theme gem.</p>
+
+<h3>0.2.1</h3>
+
+<p>The theme gem now correctly precompiles its internal image assets,
+  making them available to implementing sites like this without the need to
+  modify the manifest:</p>
+
+<p><%= asset_path 'mitlib-wordmark.svg' %></p>
+
+<p>However, loading the compiled libraries-main stylesheet still requires the
+  site to list this in the manifest.</p>
+
 <h3>0.2.0</h3>
 
 <p>At this point in the application development, we have a static HTML home
