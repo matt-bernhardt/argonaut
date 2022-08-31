@@ -19,3 +19,10 @@
 h3 {
   border-bottom: 1px solid $blue-bright;
 }
+
+pre,
+span.pre {
+  background-color: $gray-l3;
+  font-family: monospace;
+  padding: 1px;
+}
