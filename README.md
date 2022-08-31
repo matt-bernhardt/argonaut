@@ -1,3 +1,4 @@
 # Argonaut
 
-A Rails 7 application to keep track of [Danmachi Memoria Freese](https://play.google.com/store/apps/details?id=com.us.danmemo).
+A (repurposed) demonstration Rails 7 application to help me work out how to
+update our [theming gem](https://github.com/MITLibraries/mitlibraries-theme).

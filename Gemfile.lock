@@ -1,5 +1,7 @@
-PATH
-  remote: ../blorgh/tesseract
+GIT
+  remote: https://github.com/matt-bernhardt/tesseract.git
+  revision: e147fdce33705fb8a644e6600654eb3defb9ec5e
+  tag: 0.4.0
   specs:
     tesseract (0.4.0)
       debug (~> 1)
@@ -243,7 +245,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
-  tesseract (= 0.4.0)!
+  tesseract!
   turbo-rails
   tzinfo-data
   web-console
