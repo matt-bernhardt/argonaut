@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+.toolbar {
+	background: #dedede;
+}
+
+.menu {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+}
+.menu li {
+	padding: 0.5rem;
+}
+.menu li a {
+	padding: 1rem;
+}
