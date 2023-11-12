@@ -7,6 +7,7 @@
     <tr>
       <th scope="col">Full name</th>
       <th scope="col">Short name</th>
+      <th scope="col">Alias</th>
     </tr>
   </thead>
   <tbody>
@@ -14,6 +15,7 @@
       <tr>
         <td><%= link_to character.name, character %></td>
         <td><%= character.shortname %>
+        <td><%= character.alias %>
       </tr>
     <% end %>
   </tbody>
