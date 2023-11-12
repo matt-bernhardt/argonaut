@@ -10,12 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2022_04_19_224825) do
+ActiveRecord::Schema[7.1].define(version: 2023_11_12_225540) do
   create_table "characters", force: :cascade do |t|
     t.string "name"
     t.string "shortname"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "age", default: 0, null: false
+    t.string "alias", default: "", null: false
+    t.integer "height", default: 0, null: false
+    t.text "biography", default: "", null: false
   end
 
+  create_table "group", force: :cascade do |t|
+    t.string "groupname"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "character_id"
+    t.index ["character_id"], name: "index_group_on_character_id"
+  end
+
+  add_foreign_key "group", "characters"
 end

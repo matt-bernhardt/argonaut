@@ -6,4 +6,8 @@ one:
 
 two:
   name: MyString
+  age: 1
+  alias: MyAlias
+  biography: "This is my very long biography"
+  height: 1
   shortname: MyText
